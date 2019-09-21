@@ -1,0 +1,15 @@
+#!/bin/bash
+### ran beforehand to get bootstraps
+### ./fsc26 -i XXX.par -q -j -m -n100
+>bootreps.txt
+for dir in `ls -d */` ; do
+  cd "$dir"
+  echo 'Starting bootstrap "$dir"'
+  for i in {1..30}; do
+    fsc26 -t XXX.tpl -n 100000 -e XXX.est -M -L 50 -q -c 6 -multiSFS -initvalues XXX.pv
+    sed -n 2p XXX/*.bestlhoods >> boot_runs.txt
+  done
+  python ../summarize_bs.py >> ../bootreps.txt
+  cd ..
+done
+

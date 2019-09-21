@@ -1,0 +1,13 @@
+#!/bin/bash
+>out.txt
+for dir in `ls -d */` ; do
+  cd "$dir"
+  if [ -f seed.txt ]; then
+    rm seed.txt
+  fi
+  echo `basename *.txt .txt` >> ../out.txt
+  python ../summarizer.py >> ../out.txt
+  cd ..
+done
+
+
