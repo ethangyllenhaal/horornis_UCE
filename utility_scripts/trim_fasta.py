@@ -1,3 +1,16 @@
+#!/usr/bin/env python
+
+'''
+Made by Ethan Gyllenhaal (egyllenhaal@unm.edu)
+Last updated 27 August 2020
+
+Script for removing contigs from an input fasta file by name (obtained from a blast search in our case).
+Assumes the fasta has contigs starting with > and contain letters only in the ref (can be changed in the removal for loop)
+
+Usage is:
+trim_fasta.py -i /path/to/input.fasta -l /path/to/loci.txt -o /path/to/output.fasta
+'''
+
 import re, sys, getopt
 
 def main(argv):
