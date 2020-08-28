@@ -7,4 +7,4 @@ The R scripts folder contains .R files used to run Adegenet and sNMF analyses. I
 
 The fastsimcoal folder contained a "clean" set of directories for how I ran the analysis and a brief description of how I went about it. It is a bit hodge-podge due to the learning process, but you'll get the idea.
 
-The SNP_pipeline folder includes shell scripts I used to run the SNP calling pipeline based on Mike Harvey's excellent seqcap_pop (https://github.com/mgharvey/seqcap_pop) and generate input files for other analyses.
+The SNP_pipeline folder includes shell scripts I used to run the SNP calling pipeline based on Mike Harvey's excellent seqcap_pop (https://github.com/mgharvey/seqcap_pop) and generate input files for other analyses. Also includes the excel file I used to make the sub-shell scripts... Since this I've learned better ways to do this.
