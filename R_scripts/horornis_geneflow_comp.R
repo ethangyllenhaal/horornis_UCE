@@ -1,7 +1,7 @@
 library(ggplot2)
 library(tidyverse)
 setwd('D:/Documents/Projects/Horornis/Files/Demographics')
-dataset <- read_csv('geneflow_est.csv')
+dataset <- read_csv('horornis_geneflow_comp.csv')
 dataset$wrapComp <- str_wrap(dataset$Comparison, width=10)
 
 # log plot
