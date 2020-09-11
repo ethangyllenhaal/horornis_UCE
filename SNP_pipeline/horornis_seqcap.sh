@@ -1,5 +1,5 @@
 #!/bin/bash
-# HEAVILY based on https://github.com/mgharvey/seqcap_pop, cite them if this inspires you
+# heavily based on https://github.com/mgharvey/seqcap_pop, cite them if this inspires you
 # note that this assumes a file structure including:
 # "0_Z-loci", "2_reads", "3_velvet-output", "4_match", "5_mapping", "6_picard", "7_merge", "8_GATK", "9_vcf", and "analyses"
 # also assumes you've run VelvetOptimiser per seqcap_pop pipeline and have clean reads
